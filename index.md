@@ -1,7 +1,20 @@
-# EVA 2 / {{ your_project }}
+---
+badges:
+    - Official
+---
 
-This is a repository template for a EVA 2 submodule. See readme.md for instructions.
+# Bed Probing
 
-=== "Example"
+![preview](assets/__ALL__.png)
 
-{{ bom("addons/this_submodule/bom/example.csv", 4) }}
+{{ eva_link("probes") }}
+
+{{ onshape_link("probes") }}
+
+=== "8mm Inductive Probe"
+
+{{ bom("addons/probes/bom/inductive.csv", 4) }}
+
+=== "BLTouch"
+
+{{ bom("addons/probes/bom/bltouch.csv", 4) }}
