@@ -7,7 +7,7 @@ badges:
 
 ![preview](assets/__ALL__.png)
 
-This EVA Addon is supposed to contain different mounting solutions for different bed probe options. In some cases it might make more sense to mirror the mount in the slicer to 
+This EVA Addon is supposed to contain different mounting solutions for different bed probe options. In some cases it might make more sense to mirror the mount in the slicer to move the probe to the right side of the carriage.
 
 {{ eva_link("probes") }}
 
