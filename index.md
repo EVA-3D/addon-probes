@@ -1,6 +1,15 @@
 ---
+title: Bed Probing
+uid: EVA / Addons / Probes
+type: addon
 badges:
     - Official
+contributors: 
+    - pkucmus
+repo_url: https://github.com/EVA-3D/addon-probes
+cad_url: https://cad.onshape.com/documents/94cafeab52e3dfa0a28bae89/w/99794094315556b24b5664ec/e/e50692a479f24cc5bf03727a
+satisfies:
+    - bed_probe
 ---
 
 # Bed Probing
@@ -8,10 +17,6 @@ badges:
 ![preview](assets/__ALL__.png)
 
 This EVA Addon is supposed to contain different mounting solutions for different bed probe options. In some cases it might make more sense to mirror the mount in the slicer to move the probe to the right side of the carriage.
-
-{{ eva_link("probes") }}
-
-{{ onshape_link("probes") }}
 
 ## Offsets
 
@@ -24,7 +29,11 @@ This EVA Addon is supposed to contain different mounting solutions for different
         - Aero: `X-50.35`, `Y8` or `X-14`, `Y-44.9`
         - Others: `X-27.8`, `Y-12`
 
-{{ bom("addons/probes/bom/inductive_8mm.csv", 8) }}
+        <add-bom-button name="{{ meta.uid }} (LJ8)">
+            {{ bom_to_json("inductive_8mm.csv") }}
+        </add-bom-button>
+        
+        {{ bom_to_md_table("inductive_8mm.csv", 8) }}
 
     === "12mm"
 
@@ -34,7 +43,11 @@ This EVA Addon is supposed to contain different mounting solutions for different
         - Aero: `X-52.35`, `Y6.5` or `X-12.5`, `Y-46.9`
         - Others: `X-29.8`, `Y-13.5`
 
-{{ bom("addons/probes/bom/inductive_12mm.csv", 8) }}
+        <add-bom-button name="{{ meta.uid }} (LJ12)">
+            {{ bom_to_json("inductive_12mm.csv") }}
+        </add-bom-button>
+        
+        {{ bom_to_md_table("inductive_12mm.csv", 8) }}
 
     === "18mm"
 
@@ -44,7 +57,11 @@ This EVA Addon is supposed to contain different mounting solutions for different
         - Aero: `X-55.35`, `Y2.5` or `X-8.5`, `Y-49.9`
         - Others: `X-32.8`, `Y-17.5`
 
-{{ bom("addons/probes/bom/inductive_18mm.csv", 8) }}
+        <add-bom-button name="{{ meta.uid }} (LJ18)">
+            {{ bom_to_json("inductive_18mm.csv") }}
+        </add-bom-button>
+        
+        {{ bom_to_md_table("inductive_18mm.csv", 8) }}
 
 === "BLTouch"
     === "Standard"
@@ -55,7 +72,11 @@ This EVA Addon is supposed to contain different mounting solutions for different
         - Aero: `X-50.55`, `Y7` or `X-13`, `Y-45.1`
         - Others: `X-28`, `Y-13`
 
-{{ bom("addons/probes/bom/bltouch.csv", 8) }}
+        <add-bom-button name="{{ meta.uid }} (BL)">
+            {{ bom_to_json("bltouch.csv") }}
+        </add-bom-button>
+        
+        {{ bom_to_md_table("bltouch.csv", 8) }}
 
     === "Alternative"
 
@@ -65,4 +86,8 @@ This EVA Addon is supposed to contain different mounting solutions for different
         - Aero: `X-58`, `Y15` or `X-21`, `Y-50.6`
         - Others: `X-33.48`, `Y-5`
 
-{{ bom("addons/probes/bom/bltouch_alt.csv", 8) }}
+        <add-bom-button name="{{ meta.uid }} (BL-alt)">
+            {{ bom_to_json("bltouch_alt.csv") }}
+        </add-bom-button>
+        
+        {{ bom_to_md_table("bltouch_alt.csv", 8) }}
