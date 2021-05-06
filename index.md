@@ -91,3 +91,9 @@ This EVA Addon is supposed to contain different mounting solutions for different
         </add-bom-button>
         
         {{ bom_to_md_table("bltouch_alt.csv", 8) }}
+
+
+## Links
+
+{{ download_button }}
+{{ cad_link }}
